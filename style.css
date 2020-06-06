@@ -1,0 +1,128 @@
+body { /*sets background image */
+        background-image: url("images/forest.jpg");  
+}
+/*mobile First*/
+.wrapper{
+  width: 50%;
+}
+.group{
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  flex: 1;
+  margin: 10px;
+}
+
+/*desktop*/
+@media all and (min-width: 700px) {
+  .wrapper {
+    width: 75%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+/*general looks*/
+header .wrapper{/*sets background size,color,placement border for header container  */   
+  background: blanchedalmond;
+  text-align: center;
+  margin: auto;
+  
+  border: 3px solid green;  
+ 
+} 
+
+img {/*sets image shape,size and placement*/
+  border-radius: 50%;
+  
+  width: 100%;
+  
+}
+
+main .wrapper{/*sets background size,color,placement border for container  */   
+  background: blanchedalmond;
+  text-align: center;
+  margin: auto;
+  border: 3px solid green;
+   padding: 10px;
+}
+
+footer .wrapper{/*sets background size,color,placement border for container  */   
+   background: blanchedalmond;
+  text-align: center;
+  margin: auto;
+  border: 3px solid green;
+}
+.fontFam{/*font style class*/
+  font-family: Arial, Helvetica, sans-serif
+}
+.fontSize{ /*font size class*/
+  font-size: 20px;
+}
+.border{/*border class*/
+  border: 3px solid green;
+  
+}
+a:link    { color: darkgray ;  }       /* pseudo-classes*/
+a:visited { color: purple;   }
+a:hover   { color: green; }
+a:active  { color: red;  }
+.noBullets{
+  list-style-type: none;
+}
+/*Mobile Nav style*/
+ header nav ul li a {
+  
+  /* Removes the underline */
+  text-decoration: none;
+  /* gives space for list*/
+  padding: 0 8px 0 0;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+ 
+  display: flex;
+ 
+  flex-direction: row;
+  /* If screen gets smaller the text goes to next line*/
+  flex-wrap: wrap;
+  /* Removes padding in bottom. */
+  padding-bottom: 0;
+}
+/*desktop style setting for Nav*/
+@media all and (min-width: 700px) {
+  header .wrapper {
+    display: flex;
+    justify-content: space-between;/*sets nav to side*/
+  }
+
+
+  header nav {
+    margin-top: 14px; /*gives space on top*/
+  }
+  
+}
+/*form style settings*/
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+form textarea{
+  height: 80px;
+}
+
+
+
+
